@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title> Encriptar Texto </title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body>                                                 
+            <main class="main">
+
+                <img class="logo" src="img/logo.svg" >
+                           
+                
+                <textarea id="text_area" class="texto"name="text_area"  placeholder="Ingrese el texto aqui" required></textarea>
+
+                <section>                    
+                        
+                        <div class="frame-1"> 
+                            <img class="vector" src="img/Vector.svg">
+                            <p class="minusculas"> Solo letras minusculas y sin acentos </p>
+                        </div>
+
+                        <div class="buttons">                                                                  
+                            <input id="btn-encrypt" class="btn-encrypt" type="submit" value="Encriptar" required>
+                            <input id="btn-decrypt" class="btn-decrypt" type="submit" value="Desencriptar" required>              
+                        </div>                                                                                     
+                       
+
+                </section>
+                
+                <section class="rectangulo">
+                        <div id="se-oculta" class="rectangulo2">
+                            <img class="muneco" src="img/muneco.svg">
+                            <h2> Ningun mensaje fue encontrado</h2>
+                            <h3> Ingresa el texto que desea encriptar o desencriptar </h3>
+                        </div>
+
+                        <div id="se-muestra">
+                            <textarea id="mensaje" class="mensaje" type="text"  placeholder="Ningun mensaje"></textarea>
+                            <input id="btn-copiar" class="btn-copiar"  type="submit" value="Copiar" >
+                                                        
+                        </div>                                                                
+                    
+                </section>           
+                                        
+               
+            </main>    
+            
+            
+       
+       
+        <script src="js/script.js"> </script>
+    </body>
+
+</html>
+
