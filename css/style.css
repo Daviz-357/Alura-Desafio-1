@@ -1,7 +1,5 @@
-body{
-    
-    position: relative;
-    width: 940px;
+body{    
+    position: relative;    
     margin: 0 auto;
     width:  1440px;  
     height: 1024px;
@@ -19,6 +17,7 @@ body{
 }
 
 .logo{
+    position: absolute;
     height: 48px;
     margin-top: 40px;
     width: 120px;
@@ -48,6 +47,8 @@ body{
 }
 
 
+
+
 .frame-1{
     display: flex;
     align-items: center;
@@ -73,8 +74,7 @@ body{
 }
 
 .minusculas{
-    width: 205px;
-    height: 18px;
+    width: 205px;   
 
     font-family: 'Inter';
     font-style: normal;
@@ -344,9 +344,220 @@ h3{
     flex-grow: 1;
 }
 
-@media screen and (max: width 500px;){
-    main{
-        background: red;
+@media screen and (max-width: 800px){
+    
+    .main{
+        position: relative;
+        width: 768px;
+        height: 1384px;
+        
+        /* Light blue/light-blue-100 */
+        
+        background: #F3F5FC;
     }
+
+
+    .logo{
+        position: absolute;
+        width: 31.09px;
+        height: 50.58px;
+        left: 40px;               
+    }
+
+    .texto{
+        position: absolute;
+        width: 688px;
+        height: 48px;
+        left: 40px;        
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+        
+        
+        /* Dark blue/dark-blue-300 */
+        
+        color: #0A3871;
+    }
+
+    .frame-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 40px;        
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 40px;
+        top: 870px;
+    }
+
+    .rectangulo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 1001px;
+        
+        /* White */
+        
+        background: #FFFFFF;
+        /* shadow */
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    h2 {
+        width: 624px;
+        height: 29px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* identical to box height, or 29px */
+        
+        text-align: center;
+        
+        /* Gray/gray-500 */
+        
+        color: #343A40;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    h3 {
+        width: 624px;
+        height: 24px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+        
+        text-align: center;
+        
+        /* Gray/gray-400 */
+        
+        color: #495057;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .rectangulo2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        
+        width: 624px;
+        height: 69px;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 688px;
+        height: 300px;
+        left: 0px;
+        top: 0px;        
+        
+        /* White */
+        
+        background: #FFFFFF;
+        /* shadow */
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+   
+    .btn-copiar{
+        box-sizing: border-box;
+
+        /* Auto layout */
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        
+        width: 624px;
+        height: 67px;
+        top: 200px;
+        
+        /* Dark blue/dark-blue-300 */
+        
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
 }
+
+
 
